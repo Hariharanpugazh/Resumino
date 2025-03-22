@@ -1,0 +1,356 @@
+/* General Resume Styling */
+.resume-container {
+  width: 210mm; /* A4 width */
+  height: 297mm; /* A4 height */
+  margin: 0 auto;
+}
+
+.resume-section ul li span.date {
+  float: right;
+  text-align: right;
+  font-size: 12px; /* Match main font size */
+  white-space: nowrap; /* Prevent text wrapping */
+  margin-right: 10px; /* Add spacing from the edge */
+  font-weight: bold; /* Ensure text is bold for all dates */
+}
+/* CSS for Professional Summary */
+.professional-summary {
+  font-size: 12px; /* Match the desired font size */
+  line-height: 1.6; /* Adjust line height for readability */
+  white-space: normal; /* Ensure text wraps properly */
+  overflow: visible; /* Prevent text from being clipped */
+  text-align: justify; /* Optional: Align text for better appearance */
+}
+
+/* Dates Alignment */
+.resume-section ul li span.date {
+  text-align: right;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+/* Work Experience */
+.resume-section ul li p {
+  margin: 0;
+  font-size: 13px;
+  color: #333;
+  text-align: justify; /* Optional */
+}
+
+/* Adjust Company/Description Placement */
+.resume-section ul li p:first-of-type {
+  font-style: italic;
+  margin-top: 5px;
+}
+
+/* Add Space Between Entries */
+.resume-section ul li {
+  margin-bottom: 15px;
+}
+
+
+.professional-summary-container {
+  height: auto; /* Allow container height to adjust */
+  width: 100%; /* Ensure full width for content */
+}
+
+.resume-section .description {
+  font-size: 12px;
+  color: #555;
+  margin-top: 4px; /* Slight spacing below the work experience */
+  text-align: justify; /* Optional for better alignment */
+}
+
+/* Education Section Styling */
+.resume-section ul li.education {
+  display: flex;
+  justify-content: space-between; /* Space out content */
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.resume-section ul li.education .degree {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px; /* Add spacing below the degree */
+}
+
+.resume-section ul li.education .institution {
+  font-style: italic;
+  color: #555;
+  margin-top: 0; /* Remove any top margin for consistency */
+}
+
+.resume-section ul li.education .date {
+  float: right;
+  font-weight: bold;
+  font-size: 12px;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Work Experience Section */
+.resume-section ul li.work {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.resume-section ul li.work .details {
+  width: 70%; /* Restrict width for better alignment */
+  text-align: justify;
+}
+
+.resume-section ul li.work .date {
+  float: right;
+  font-weight: bold;
+  white-space: nowrap;
+}
+/* Right-align the dates */
+.resume-section .date {
+  float: right;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Description Styling */
+.resume-section ul li p {
+  margin: 0;
+  font-size: 13px;
+  color: #333;
+  text-align: justify; /* Optional: Justify the text */
+}
+
+
+.resume-section ul li span.date {
+  font-weight: bold; /* Ensure dates are bold */
+  text-align: right;
+  white-space: nowrap; /* Prevent text wrapping */
+  margin-left: 10px; /* Add spacing from description */
+}
+
+.resume-section ul li span.description {
+  max-width: 70%; /* Restrict description width */
+  text-align: justify; /* Align text for a clean look */
+  margin-left: 10px; /* Add spacing from the role/company */
+}
+
+
+/* Section Lines */
+.resume-section h2 {
+  border-bottom: 2px solid #333; /* Darker line for section */
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.resume-container {
+  margin-bottom: 10px;
+}
+
+
+/* Header Section */
+.resume-header h1 {
+  font-size: 28px; /* Larger name font size */
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.resume-section {
+  margin-bottom: 6px; /* Tighten section spacing */
+}
+
+
+
+.resume-header p {
+  font-size: 14px; /* Contact details font size */
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Section Headers */
+.resume-section h2 {
+  font-size: 17px; /* Section header font size */
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  border-bottom: 2px solid #000; /* Darker line */
+  padding-bottom: 4px;
+  margin-top: 10px; /* Reduce gap between sections */
+}
+
+/* List Styling */
+.resume-section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Item Styling */
+.resume-section ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 3px;
+}
+
+/* Right-aligned Text */
+.resume-section .right-align {
+  text-align: right;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+/* Skills Section Styling */
+.skills-list {
+  display: inline; /* Display skills in a single line */
+}
+
+.skills-list li {
+  display: inline;
+  margin-right: 8px; /* Add spacing between skills */
+}
+
+.skills-list li::after {
+  content: ", ";
+}
+
+.skills-list li:last-child::after {
+  content: ""; /* Remove comma after the last skill */
+}
+
+/* Adjustments for Button */
+.button-container {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.download-btn {
+  font-size: 13px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Printing Styles */
+@media print {
+  .resume-container {
+    width: auto; /* Adjust width for printing */
+    box-shadow: none;
+    border: none;
+    margin: 0 auto;
+  }
+
+  .button-container {
+    display: none; /* Hide the button in print */
+  }
+}
+
+/* Login and Register Page Styles */
+
+/* Authentication Page Styles */
+.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8fafc; /* Light gray background */
+  padding: 1rem;
+}
+
+.auth-page .w-full {
+  max-width: 24rem; /* Width of the card */
+  padding: 2rem; /* Internal padding for spacing */
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center; /* Center align all content inside the card */
+}
+
+/* Title styles */
+.auth-page h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem; /* Font size for title */
+  font-weight: 700; /* Bold text */
+  text-align: center;
+  color: #1a202c; /* Slightly dark gray */
+}
+
+/* Input field styling */
+.auth-page input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  padding-left: 2.5rem; /* Space for the icons */
+  margin-bottom: 1rem; /* Space between fields */
+  border: 1px solid #e2e8f0; /* Light border */
+  border-radius: 0.375rem; /* Rounded input corners */
+  font-size: 1rem;
+  color: #4a5568; /* Medium gray text */
+  outline: none;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.auth-page input:focus {
+  border-color: #3182ce; /* Blue border on focus */
+  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5); /* Blue ring */
+}
+
+/* Icon styling */
+.auth-page .relative .absolute {
+  left: 0.75rem; /* Position of the icon */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a0aec0; /* Light gray color for icons */
+}
+
+/* Button Styling */
+.auth-page button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #3182ce; /* Always visible blue */
+  color: #ffffff; /* White text */
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.375rem; /* Rounded button */
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for visibility */
+  transition: all 0.2s ease-in-out;
+}
+
+.auth-page button:hover {
+  background-color: #3182ce; /* Maintain the same blue color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Slightly enhanced shadow for hover feedback */
+}
+
+.auth-page button:disabled {
+  background-color: #a0aec0; /* Light gray for disabled */
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Link styling */
+.auth-page a {
+  color: #3182ce; /* Blue links */
+  font-size: 0.875rem; /* Slightly smaller text */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.auth-page a:hover {
+  color: #2b6cb0; /* Darker blue on hover */
+}
+
+
