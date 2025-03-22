@@ -11,7 +11,7 @@ function ResumePreview() {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await fetch("https://resumino-backend.onrender.com/resume/fetch-latest-user-info/");
+        const response = await fetch("http://localhost:8000/resume/fetch-latest-user-info/");
         if (!response.ok) {
           throw new Error(`Failed to fetch user data. Status: ${response.status}`);
         }

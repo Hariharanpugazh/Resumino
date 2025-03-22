@@ -37,7 +37,7 @@ function ResumeForm() {
         if (!loggedInUserEmail) return;
 
         const response = await fetch(
-          `https://resumino-backend.onrender.com/resume/fetch-latest-user-info/?email=${loggedInUserEmail}`
+          `http://localhost:8000/resume/fetch-latest-user-info/?email=${loggedInUserEmail}`
         );
         if (response.ok) {
           const data = await response.json();
@@ -115,7 +115,7 @@ function ResumeForm() {
     setLoading(true);
     e.preventDefault();
     try {
-      const response = await fetch("https://resumino-backend.onrender.com/resume/save-user-info/", {
+      const response = await fetch("http://localhost:8000/resume/save-user-info/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

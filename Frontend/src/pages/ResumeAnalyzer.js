@@ -50,7 +50,7 @@ const ResumeAnalyzer = () => {
 
     try {
       const response = await axios.post(
-        "https://resumino-backend.onrender.com/api/analyze-resume/",
+        "http://localhost:8000/api/analyze-resume/",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
